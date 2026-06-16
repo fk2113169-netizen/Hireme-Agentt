@@ -158,21 +158,21 @@ def upload_page():
                 st.rerun()
                 return
                 
-    # Render Stats Bento Grid
+    # Render Stats Bento Grid with standardized border-radius (12px), clean shadow, and transitions
     st.markdown(
         """
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12 mb-16 px-8">
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <div class="text-primary text-3xl font-extrabold mb-1">98%</div>
-            <div class="text-xs font-semibold text-slate-600">Match Accuracy</div>
+          <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-md hover:shadow-lg transition-all duration-300 text-center border-t-4 border-t-[#3525cd]">
+            <div class="text-[#3525cd] text-4xl font-extrabold mb-1">98%</div>
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Match Accuracy</div>
           </div>
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <div class="text-primary text-3xl font-extrabold mb-1">2.4s</div>
-            <div class="text-xs font-semibold text-slate-600">Avg. Analysis Time</div>
+          <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-md hover:shadow-lg transition-all duration-300 text-center border-t-4 border-t-[#3525cd]">
+            <div class="text-[#3525cd] text-4xl font-extrabold mb-1">2.4s</div>
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Avg. Analysis Time</div>
           </div>
-          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
-            <div class="text-primary text-3xl font-extrabold mb-1">50k+</div>
-            <div class="text-xs font-semibold text-slate-600">Daily Listings Indexed</div>
+          <div class="bg-white p-8 rounded-xl border border-slate-100 shadow-md hover:shadow-lg transition-all duration-300 text-center border-t-4 border-t-[#3525cd]">
+            <div class="text-[#3525cd] text-4xl font-extrabold mb-1">50k+</div>
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider">Daily Listings Indexed</div>
           </div>
         </div>
         """,
